@@ -1,6 +1,6 @@
 <?php
 session_start();
-unset($_SESSION['admin_name']);
-unset($_SESSION['password']);
+unset($_SESSION['Name']);
+unset($_SESSION['Passward']);
 header("Location:admin_login.php");
 ?>

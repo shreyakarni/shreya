@@ -6,8 +6,7 @@
         <head>
 		      <title>Display page</title>
 		</head>
-	<body style="background-image: url('img6.jpg');" >
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 * {box-sizing: border-box;}
 body {font-family: Verdana, sans-serif;}
@@ -105,10 +104,12 @@ body {
 	<div class="topnav">
   <a class="active" href="#home"><i>HOME</i></a>
   <a href="flat details.php">flat Details</a>
-  <a href="visitor.php">visitor details</a>
-  <a href="adminabout.php">About</a>
-  <a href="logoutadmin.php">Logout</a>
+  <a href="visitoruser.php">visitor details</a>
+  <a href="userabout.php">About</a>
+  <a href="logoutuser.php">Logout</a>
 </div>
+	<body style="background-image: url('detail.webp');">
+	<center>
 	    <table border="2">
 		<h1>Flat details</h1>
 		 
@@ -116,12 +117,11 @@ body {
 		    <tr>
 			  <th>Flat_no</th>
 			  <th>Owner_name</th>
-			  <th>Phone_number</th>
+			  <th>Phone_no</th>
 			  <th>Email</th>
 			  <th>Postal_address</th>
 			  <th>City</th>
-			  <th>Edit</th>
-			  <th>Delete</th>
+			  
 			 </tr>
 		
 	
@@ -144,8 +144,7 @@ body {
 		  <td><?php echo $email;?></td>
 		   <td><?php echo $postal_address;?></td>
 		  <td><?php echo $city;?></td>
-		  <td><a href="editflat.php?flat_no=<?php echo $flat_no;?>">Edit</a></td>
-		 <td><a href="deleteflat.php?flat_no=<?php echo $flat_no;?>">Delete</a></td>
+		  
 		</tr>
 		
 	<?php } ?>
@@ -153,7 +152,7 @@ body {
 	</table><br/>
 	</center>
 	<center>
-	<a href="addflat.php" class="button" />ADD NEW</a>
+	
 	</center>
 	</body>
 	</html>
